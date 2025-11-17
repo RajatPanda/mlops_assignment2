@@ -28,7 +28,7 @@ def train_model(X_train, y_train):
         random_state=42,
         max_depth=10,
         min_samples_split=5,
-        min_samples_leaf=2
+        min_samples_leaf=3
     )
     model.fit(X_train, y_train)
     print("Training completed!")
