@@ -15,7 +15,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 #COPY test.py .
 COPY app.py .
 COPY templates/ templates/
-COPY static/ static/
 
 # Copy pre-trained model (if it exists in the build context)
 COPY savedmodel.pth .
