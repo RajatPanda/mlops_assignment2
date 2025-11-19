@@ -24,12 +24,7 @@ def split_data(X, y, test_size=0.3):
 
 def train_model(X_train, y_train):
     print("Training DecisionTreeClassifier...")
-    model = DecisionTreeClassifier(
-        random_state=42,
-        max_depth=10,
-        min_samples_split=5,
-        min_samples_leaf=3
-    )
+    model = DecisionTreeClassifier()
     model.fit(X_train, y_train)
     print("Training completed!")
     return model
