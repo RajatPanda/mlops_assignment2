@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - dev
+      - docker_cicd
 
 jobs:
   check_working_repo:
